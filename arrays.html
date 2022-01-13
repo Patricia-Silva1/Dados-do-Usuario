@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Document</title>
+<style>
+    p {
+      border : 1px solid black;
+      display: inline-block;
+      width: 25%;
+    }
+    
+</style>    
+</head>
+<body>
+    <form action="#" id="frm">
+        digite a bebida:<br><br>
+        bebida: <input type="text" id="bebida"><br><br>
+        <input type="button" value="executar" onclick="executar();">
+    </form>
+    <p id="resposta">
+      [resposta]
+    </p>
+    <script>
+        const bebidas = [];
+        //console.log(bebidas);
+
+        function executar(){
+            let frm = document.forms['frm'];
+            let bebida = frm.elements.bebida.value;
+           
+            console.log(bebidas);
+            bebidas.push("Água");
+            bebidas.push("Café");
+            console.log(bebidas);
+            bebidas.pop
+             
+            //document.getElementById('resposta').innerHTML = resposta;
+
+        }
+
+
+    </script>
+
+</body>
+</html>
